@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VØID STUDIO is an ultra-premium digital creative studio for futuristic branding, motion design, and experience design.">
+  <meta name="theme-color" content="#050709">
+  <meta property="og:title" content="VØID STUDIO — Digital Creative Studio">
+  <meta property="og:description" content="We build what others only imagine.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1519608487953-e999c86e7455?w=1600&q=90&auto=format&fit=crop">
+  <title>VØID STUDIO — Digital Creative Studio</title>
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="%23050709"/><text x="50%" y="56%" text-anchor="middle" font-family="Arial" font-size="40" font-weight="700" fill="%238B5CF6">Ø</text></svg>'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    (() => {
+      try {
+        const storedTheme = localStorage.getItem('void-theme');
+        document.documentElement.dataset.theme = storedTheme || 'dark';
+      } catch {
+        document.documentElement.dataset.theme = 'dark';
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="noise-overlay" aria-hidden="true"></div>
+  <div class="loader" aria-hidden="true">
+    <div class="loader__mark" aria-label="VØID">
+      <span>V</span><span>Ø</span><span>I</span><span>D</span>
+    </div>
+    <div class="loader__bar"><span></span></div>
+  </div>
+
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="nav__logo magnetic" href="#top" aria-label="VØID STUDIO home">VØID</a>
+      <div class="nav__links" id="nav-links">
+        <a href="#work">Work</a>
+        <a href="#studio">Studio</a>
+        <a href="#process">Process</a>
+        <a href="#journal">Journal</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="theme-toggle magnetic" type="button" aria-label="Switch to light mode" aria-pressed="false">
+        <span class="theme-toggle__track" aria-hidden="true">
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24"><path d="M21 14.7A8.2 8.2 0 0 1 9.3 3a7 7 0 1 0 11.7 11.7Z"/></svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24"><path d="M12 4V2m0 20v-2m8-8h2M2 12h2m14.4-6.4 1.4-1.4M4.2 19.8l1.4-1.4m12.8 0 1.4 1.4M4.2 4.2l1.4 1.4M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/></svg>
+        </span>
+      </button>
+      <a class="nav__cta magnetic" href="#contact">Start Project <span>→</span></a>
+      <button class="nav__toggle magnetic" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-dark" aria-label="VØID STUDIO introduction">
+      <div class="hero__bg" data-parallax="0.18"></div>
+      <div class="orb orb--one" data-parallax="0.02"></div>
+      <div class="orb orb--two" data-parallax="0.04"></div>
+      <div class="orb orb--three" data-parallax="0.03"></div>
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow reveal">Digital Creative Studio / Global Futures</p>
+          <h1 class="hero__title reveal">
+            Develop<br>
+            <span class="gradient-text">brand systems</span><br>
+            with cinematic<br>pressure.
+          </h1>
+          <p class="hero__text reveal">We shape identity, motion, and digital experience for companies operating at scale.</p>
+          <div class="hero__actions reveal">
+            <a class="btn btn--primary magnetic" href="#work">Explore Work</a>
+            <a class="btn btn--ghost magnetic" href="#studio">Enter Studio</a>
+          </div>
+        </div>
+        <aside class="hero__visual reveal" aria-label="Studio signal">
+          <div class="signal-card glass-card">
+            <span class="signal-card__kicker">Live Signal</span>
+            <strong>Ø-014</strong>
+            <small>system active</small>
+          </div>
+          <div class="hero__frame">
+            <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?w=900&q=90&auto=format&fit=crop" alt="Noir city architecture with futuristic lights">
+          </div>
+        </aside>
+      </div>
+      <div class="hero__stats container reveal">
+        <div><strong data-count="140">0</strong><span>Projects</span></div>
+        <div><strong data-count="8">0</strong><span>Years shaping futures</span></div>
+        <div><strong data-count="3">0</strong><span>Award-winning systems</span></div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true"><span>SCROLL</span><i></i></div>
+      <div class="hero-marquee" aria-hidden="true">
+        <div>We architect environments ✦ VØID STUDIO ✦ Systems that behave like culture ✦ VØID STUDIO ✦ We architect environments ✦ VØID STUDIO ✦ Systems that behave like culture ✦ VØID STUDIO ✦</div>
+      </div>
+    </section>
+
+    <section class="marquee-strip" aria-label="Services marquee">
+      <div class="marquee marquee--forward">
+        <span>BRANDING ✦ MOTION DESIGN ✦ WEB EXPERIENCE ✦ ART DIRECTION ✦ VISUAL IDENTITY ✦ BRANDING ✦ MOTION DESIGN ✦ WEB EXPERIENCE ✦ ART DIRECTION ✦ VISUAL IDENTITY ✦</span>
+      </div>
+      <div class="marquee marquee--reverse">
+        <span>VISUAL SYSTEMS ✦ CAMPAIGN DESIGN ✦ PRODUCT STORY ✦ INTERACTION ✦ CINEMATIC CONTENT ✦ VISUAL SYSTEMS ✦ CAMPAIGN DESIGN ✦ PRODUCT STORY ✦ INTERACTION ✦ CINEMATIC CONTENT ✦</span>
+      </div>
+    </section>
+
+    <section class="section-about section-pad" id="about">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <p class="about-eyebrow" data-reveal="slide-right">✦ About the Studio · Est. 2018</p>
+          <h2 class="about-title" data-reveal="heading">We don't make<br><span>pretty</span> things.</h2>
+          <div class="about-manifesto" data-reveal>
+            <p>VØID operates at the intersection of strategy and spectacle. We don't just design interfaces; we architect environments.</p>
+            <p>Our work begins with silence: the unresolved tension inside a company, a market, a future. Then we turn it into a system people can see, touch, remember, and desire.</p>
+            <p>Our team is small by design. We believe depth beats scale, and that obsession produces what efficiency cannot.</p>
+          </div>
+          <div class="about-divider" aria-hidden="true"></div>
+          <div class="about-values" data-reveal>
+            <span>Craft over output</span>
+            <span>Depth over scale</span>
+            <span>Impact over aesthetics</span>
+          </div>
+          <a class="about-link" href="#work" data-reveal>See our work →</a>
+        </div>
+        <div class="about-visual" data-reveal>
+          <div class="about-orb" aria-hidden="true"></div>
+          <figure class="about-image">
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&h=1100&q=90&auto=format&fit=crop" alt="Dark creative studio environment with a focused team workspace" loading="lazy" width="900" height="1100">
+          </figure>
+          <div class="stat-card glass-card">
+            <span class="stat-number">140<span>+</span></span>
+            <span class="stat-label">Projects Shipped</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work section-pad" id="work">
+      <div class="container">
+        <div class="section-heading section-heading--offset reveal">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Projects that define categories.</h2>
+        </div>
+        <div class="work-grid">
+          <article class="project-card project-card--large reveal">
+            <img src="https://images.unsplash.com/photo-1550684376-efcbd6e3f031?w=1200&q=90&auto=format&fit=crop" alt="Abstract violet light installation">
+            <div class="project-card__content">
+              <span>Visual Identity</span>
+              <h3>Nebula Protocol</h3>
+              <p>Brand universe for a private aerospace intelligence platform.</p>
+              <i>↗</i>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=900&q=90&auto=format&fit=crop" alt="Person in virtual reality headset under blue light">
+            <div class="project-card__content">
+              <span>Experience Design</span>
+              <h3>Oculus Atelier</h3>
+              <p>Immersive retail ritual for a luxury optics house.</p>
+              <i>↗</i>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=900&q=90&auto=format&fit=crop" alt="Futuristic building facade at night">
+            <div class="project-card__content">
+              <span>Motion System</span>
+              <h3>Monolith Bank</h3>
+              <p>Motion language for a borderless wealth platform.</p>
+              <i>↗</i>
+            </div>
+          </article>
+        </div>
+        <a class="text-link reveal" href="#contact">View all work →</a>
+      </div>
+    </section>
+
+    <section class="services section-pad" id="services">
+      <div class="container services__grid">
+        <aside class="services__intro reveal">
+          <p class="eyebrow">Capabilities</p>
+          <h2>Identity systems with cinematic pressure.</h2>
+          <p>We shape brand behavior, motion, interfaces, and rituals into one unmistakable signal.</p>
+          <div class="services__orb" aria-hidden="true"></div>
+        </aside>
+        <div class="services__list">
+          <a class="service-row reveal" href="#contact"><span>01</span><strong>Brand Identity</strong><em>Strategy / Naming / Systems</em><i>+</i></a>
+          <a class="service-row reveal" href="#contact"><span>02</span><strong>Motion & Animation</strong><em>3D / Film / Kinetic Type</em><i>+</i></a>
+          <a class="service-row reveal" href="#contact"><span>03</span><strong>Web Experience</strong><em>UX / Frontend / Interaction</em><i>+</i></a>
+          <a class="service-row reveal" href="#contact"><span>04</span><strong>Creative Direction</strong><em>Editorial / Launch / Art</em><i>+</i></a>
+          <a class="service-row reveal" href="#contact"><span>05</span><strong>Visual Systems</strong><em>Guidelines / Tokens / Governance</em><i>+</i></a>
+          <a class="service-row reveal" href="#contact"><span>06</span><strong>Campaign Design</strong><em>Social / Spatial / Film</em><i>+</i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="studio section-pad" id="studio">
+      <div class="container studio__grid">
+        <div class="studio__copy reveal">
+          <p class="eyebrow">The Studio</p>
+          <h2>We make brands feel inevitable.</h2>
+          <p>VØID operates where restraint meets voltage. We are a small senior team designing identities that can survive culture, capital, and speed.</p>
+          <p>Our work begins with silence: the unresolved tension inside a company, a market, a future. Then we turn it into a system people can see, touch, remember, and desire.</p>
+          <blockquote>“The future does not arrive. It is staged.”</blockquote>
+          <div class="studio__numbers">
+            <div><strong data-count="8">0</strong><span>Years</span></div>
+            <div><strong data-count="140">0</strong><span>Projects</span></div>
+            <div><strong data-count="32">0</strong><span>Global Clients</span></div>
+          </div>
+        </div>
+        <div class="studio__visual reveal">
+          <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1000&q=90&auto=format&fit=crop" alt="Dark creative studio workspace with people collaborating">
+          <div class="award-card glass-card">
+            <small>Recognition</small>
+            <strong>CSSDA / Awwwards / Behance</strong>
+            <span>Featured systems across identity, motion, and digital experience.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process section-pad" id="process">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Process</p>
+          <h2>Precision over output. A systematic approach.</h2>
+        </div>
+        <div class="timeline reveal">
+          <span class="timeline__progress" aria-hidden="true"></span>
+          <article><span>01</span><h3>Discover</h3><p>We map the cultural, commercial, and emotional terrain. The goal is not more information; it is sharper tension.</p></article>
+          <article><span>02</span><h3>Define</h3><p>We distill a strategic point of view into language, principles, and a visual thesis. This becomes the spine of the system.</p></article>
+          <article><span>03</span><h3>Design</h3><p>We prototype identity, motion, and interface together. The brand is judged in use, not in presentation theater.</p></article>
+          <article><span>04</span><h3>Deliver</h3><p>We package the system with guidelines, assets, and launch direction. Teams leave with clarity and momentum.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-workflow section-pad" id="workflow">
+      <div class="container">
+        <div class="workflow-header">
+          <p class="team-eyebrow" data-reveal="slide-right">✦ Proses Kerja · Futuristic Workflow System</p>
+          <h2 class="team-title" data-reveal="heading">From signal<br><span>to launch.</span></h2>
+          <p class="team-subtext" data-reveal>Empat fase yang menjaga strategi, desain, development, dan launch tetap tajam dalam satu sistem kerja.</p>
+        </div>
+        <div class="workflow-timeline" data-reveal>
+          <span class="workflow-line" aria-hidden="true"></span>
+          <article class="workflow-step">
+            <div class="workflow-marker">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16M4 12h10M4 19h7"/></svg>
+            </div>
+            <span>01</span>
+            <h3>Brief</h3>
+            <p>We decode the ambition, constraints, audience, and cultural tension behind the project.</p>
+          </article>
+          <article class="workflow-step">
+            <div class="workflow-marker">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 20 4.5-1 10-10a2.1 2.1 0 0 0-3-3l-10 10L4 20Z"/></svg>
+            </div>
+            <span>02</span>
+            <h3>Desain</h3>
+            <p>We shape the visual system, interface rhythm, motion behavior, and brand atmosphere.</p>
+          </article>
+          <article class="workflow-step">
+            <div class="workflow-marker">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 9-4 3 4 3m8-6 4 3-4 3m-2-9-4 12"/></svg>
+            </div>
+            <span>03</span>
+            <h3>Develop</h3>
+            <p>We turn the system into fast, responsive, production-grade frontends with precise interaction.</p>
+          </article>
+          <article class="workflow-step">
+            <div class="workflow-marker">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v10m0-10 5 5m-5-5-5 5M5 21h14"/></svg>
+            </div>
+            <span>04</span>
+            <h3>Launch</h3>
+            <p>We package, QA, deploy, and refine the experience so the release feels inevitable.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-team section-pad" id="people">
+      <div class="container">
+        <div class="team-header">
+          <p class="team-eyebrow" data-reveal="slide-right">✦ Our People · The Minds Behind the Work</p>
+          <h2 class="team-title" data-reveal="heading">The obsessives<br><span>who make it real.</span></h2>
+          <p class="team-subtext" data-reveal>Three perspectives. One shared obsession with craft, precision, and the spaces where design meets impact.</p>
+        </div>
+        <div class="team-grid">
+          <article class="team-card" data-reveal>
+            <div class="card-glow-border" aria-hidden="true"></div>
+            <div class="card-avatar-zone">
+              <div class="avatar-frame">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&q=85&auto=format&fit=crop&crop=face" alt="Arya Wicaksono" loading="lazy" width="300" height="300">
+                <div class="avatar-glow-ring" aria-hidden="true"></div>
+              </div>
+              <div class="availability-dot" title="Available for collaboration"></div>
+            </div>
+            <div class="card-body">
+              <div class="card-role-badge">Creative Director</div>
+              <h3 class="card-name">Arya Wicaksono</h3>
+              <p class="card-bio">Turning brand vision into visual language since 2016.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-skills">
+                <span>Brand</span>
+                <span>Direction</span>
+                <span>Strategy</span>
+              </div>
+              <a href="#contact" class="card-link" aria-label="View Arya Wicaksono profile">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+              </a>
+            </div>
+          </article>
+          <article class="team-card" data-reveal>
+            <div class="card-glow-border" aria-hidden="true"></div>
+            <div class="card-avatar-zone">
+              <div class="avatar-frame">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&q=85&auto=format&fit=crop&crop=face" alt="Nadia Salma" loading="lazy" width="300" height="300">
+                <div class="avatar-glow-ring" aria-hidden="true"></div>
+              </div>
+              <div class="availability-dot" title="Available for collaboration"></div>
+            </div>
+            <div class="card-body">
+              <div class="card-role-badge">UI/UX Engineer</div>
+              <h3 class="card-name">Nadia Salma</h3>
+              <p class="card-bio">Engineering interfaces that feel inevitable, not designed.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-skills">
+                <span>Interaction</span>
+                <span>Systems</span>
+                <span>Code</span>
+              </div>
+              <a href="#contact" class="card-link" aria-label="View Nadia Salma profile">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+              </a>
+            </div>
+          </article>
+          <article class="team-card" data-reveal>
+            <div class="card-glow-border" aria-hidden="true"></div>
+            <div class="card-avatar-zone">
+              <div class="avatar-frame">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&q=85&auto=format&fit=crop&crop=face" alt="Reza Firmansyah" loading="lazy" width="300" height="300">
+                <div class="avatar-glow-ring" aria-hidden="true"></div>
+              </div>
+              <div class="availability-dot" title="Available for collaboration"></div>
+            </div>
+            <div class="card-body">
+              <div class="card-role-badge">Motion Designer</div>
+              <h3 class="card-name">Reza Firmansyah</h3>
+              <p class="card-bio">Making time bend for ideas that deserve to move.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-skills">
+                <span>Motion</span>
+                <span>3D</span>
+                <span>Narrative</span>
+              </div>
+              <a href="#contact" class="card-link" aria-label="View Reza Firmansyah profile">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-testimonials section-pad" id="testimonials">
+      <div class="container">
+        <div class="testimonial-header">
+          <p class="team-eyebrow" data-reveal="slide-right">✦ Client Signals · Proof Under Pressure</p>
+          <h2 class="team-title" data-reveal="heading">Work that changes<br><span>the room.</span></h2>
+          <p class="team-subtext" data-reveal>Quiet words from teams who trusted us with launches, identity systems, and digital experiences that had to land right.</p>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial-card" data-reveal>
+            <p>“VØID understood the category before designing a single screen. The final system felt strategic, cinematic, and completely ownable.”</p>
+            <div class="testimonial-person">
+              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=160&h=160&q=85&auto=format&fit=crop&crop=face" alt="Marcus Ellery" loading="lazy" width="160" height="160">
+              <div><strong>Marcus Ellery</strong><span>Founder, Nova Capital</span></div>
+            </div>
+          </article>
+          <article class="testimonial-card testimonial-card--featured" data-reveal>
+            <p>“They gave our product a visual language with tension and restraint. It finally felt like the company we were building toward.”</p>
+            <div class="testimonial-person">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=160&h=160&q=85&auto=format&fit=crop&crop=face" alt="Leona Ward" loading="lazy" width="160" height="160">
+              <div><strong>Leona Ward</strong><span>VP Brand, Helix Systems</span></div>
+            </div>
+          </article>
+          <article class="testimonial-card" data-reveal>
+            <p>“The craft was obvious, but the real value was clarity. Every decision had a reason, every motion had a job.”</p>
+            <div class="testimonial-person">
+              <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=160&h=160&q=85&auto=format&fit=crop&crop=face" alt="Julian Meyer" loading="lazy" width="160" height="160">
+              <div><strong>Julian Meyer</strong><span>Creative Lead, Orbital Labs</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof section-pad" id="journal">
+      <div class="container proof__inner">
+        <div class="proof__pattern" aria-hidden="true"></div>
+        <blockquote class="reveal">
+          “VØID gave our company the rarest thing in a crowded category: a visual point of view nobody could mistake for anyone else.”
+        </blockquote>
+        <div class="proof__person reveal">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=160&q=90&auto=format&fit=crop" alt="Portrait of Adrien Vale">
+          <div><strong>Adrien Vale</strong><span>Chief Brand Officer, Aster Dynamics</span></div>
+        </div>
+        <div class="logo-bar reveal" aria-label="Client names">
+          <span>ASTER</span><span>NOVA</span><span>MONOLITH</span><span>HELIX</span><span>ORBITAL</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="prefooter" id="start">
+      <div class="prefooter__bg"></div>
+      <div class="orb orb--cta"></div>
+      <div class="container prefooter__inner reveal">
+        <p class="eyebrow">Start a Signal</p>
+        <h2>Ready to build something remarkable?</h2>
+        <p>Bring us the impossible brief. We will give it form.</p>
+        <a class="btn btn--primary btn--xl magnetic" href="#contact">Initiate Project</a>
+      </div>
+    </section>
+
+    <section class="section-contact section-pad" id="contact">
+      <div class="container contact-grid">
+        <aside class="contact-panel glass-card" data-reveal>
+          <p class="team-eyebrow">✦ Contact · Available for Selected Projects</p>
+          <h2>Let's shape the next signal.</h2>
+          <div class="contact-list">
+            <div><span>Address</span><strong>Jl. Senopati No. 18, Jakarta Selatan</strong></div>
+            <div><span>Email</span><a href="mailto:studio@void.example">studio@void.example</a></div>
+            <div><span>Phone</span><a href="tel:+628118800140">+62 811 8800 140</a></div>
+            <div><span>Hours</span><strong>Mon-Fri · 10:00-18:00 WIB</strong></div>
+          </div>
+          <div class="contact-social">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Behance">BE</a>
+            <a href="#" aria-label="LinkedIn">LI</a>
+          </div>
+          <div class="contact-map" aria-hidden="true">
+            <span></span><i></i>
+          </div>
+        </aside>
+        <div class="contact-form-card glass-card" data-reveal>
+          <form class="contact-form" novalidate>
+            <div class="form-row">
+              <label for="fullName">Nama Lengkap</label>
+              <input id="fullName" name="fullName" type="text" autocomplete="name" required>
+              <small class="field-error" data-error-for="fullName"></small>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+              <small class="field-error" data-error-for="email"></small>
+            </div>
+            <div class="form-row">
+              <label for="phone">Nomor Telepon</label>
+              <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel">
+              <small class="field-error" data-error-for="phone"></small>
+            </div>
+            <div class="form-row">
+              <label for="service">Layanan yang Diinginkan</label>
+              <select id="service" name="service">
+                <option value="Brand Identity">Brand Identity</option>
+                <option value="Motion Design">Motion Design</option>
+                <option value="Web Experience">Web Experience</option>
+                <option value="Creative Direction">Creative Direction</option>
+              </select>
+            </div>
+            <div class="form-row form-row--wide">
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+              <small class="field-error" data-error-for="message"></small>
+            </div>
+            <button class="btn btn--primary contact-submit magnetic" type="submit">Kirim Pesan 🚀</button>
+          </form>
+          <div class="form-success" aria-live="polite">
+            <span>✓</span>
+            <h3>✅ Pesan berhasil dikirim!</h3>
+            <p>Kami akan menghubungi Anda dalam 24 jam.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a class="footer__logo" href="#top">VØID</a>
+        <p>We build what others only imagine.</p>
+        <div class="footer__social"><a href="#">IG</a><a href="#">BE</a><a href="#">LI</a></div>
+      </div>
+      <div><h3>Navigation</h3><a href="#work">Work</a><a href="#studio">Studio</a><a href="#process">Process</a><a href="#journal">Journal</a></div>
+      <div><h3>Services</h3><a href="#services">Brand Identity</a><a href="#services">Motion Design</a><a href="#services">Web Experience</a><a href="#services">Creative Direction</a></div>
+      <div><h3>Contact</h3><a href="mailto:studio@void.example">studio@void.example</a><a href="tel:+442080000000">+44 20 8000 0000</a><span class="availability"><i></i>Available for projects</span></div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2026 VØID STUDIO.</span>
+      <span>Designed with obsession.</span>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
